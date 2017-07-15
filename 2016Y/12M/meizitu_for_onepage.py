@@ -53,4 +53,4 @@ class mzitu():
 
 
 Mzitu = mzitu()  ##实例化
-Mzitu.all_url('http://www.mzitu.com/94578/')  ##给函数all_url传入参数  你可以当作启动爬虫（就是入口）
+Mzitu.all_url('http://www.mzitu.com/90559/')  ##给函数all_url传入参数  你可以当作启动爬虫（就是入口）
