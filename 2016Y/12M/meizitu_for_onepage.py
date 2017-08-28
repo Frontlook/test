@@ -47,10 +47,11 @@ class mzitu():
 
     def request(self, url):  ##这个函数获取网页的response 然后返回
         headers = {
-            'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
+            'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
+            'Referer':'http://www.mzitu.com'}
         content = requests.get(url, headers=headers)
         return content
 
 
 Mzitu = mzitu()  ##实例化
-Mzitu.all_url('http://www.mzitu.com/90559/')  ##给函数all_url传入参数  你可以当作启动爬虫（就是入口）
+Mzitu.all_url('http://www.mzitu.com/99413/')  ##给函数all_url传入参数  你可以当作启动爬虫（就是入口）
